@@ -1,4 +1,8 @@
+import { useTranslations } from "next-intl"
+
 const SearchBox = () => {
-    return <input type="text" placeholder="type here to search" />
+    const translations = useTranslations()
+
+    return <input type="text" placeholder={translations("search_hint")} />
 }
 export default SearchBox
