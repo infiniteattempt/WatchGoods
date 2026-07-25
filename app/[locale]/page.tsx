@@ -17,14 +17,11 @@ export default function Home() {
     return <h1>Error</h1>
 
   if (data)
-    return <div>
+    return <div className="flex flex-col gap-20 p-10">
       <SearchBox />
 
-      <div style={{
-        "display": "grid",
-        gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-        "gap": "16px"
-      }}>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+      >
         {
           data.map((items) => {
             return <MovieItemCell key={items.imdbID} item={items} />
