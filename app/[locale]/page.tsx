@@ -17,7 +17,7 @@ export default function Home() {
     return <h1>Error</h1>
 
   if (data)
-    return <div className="flex flex-col gap-20 p-10">
+    return <div className="flex flex-col gap-20 p-10 bg-white">
       <SearchBox />
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
